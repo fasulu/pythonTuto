@@ -18,3 +18,17 @@ if a == 4:
         print("No a < b")
 else:
     print(f"terminated. {a} not equal to 4")
+
+# *********** Ternary Operation
+	
+# expression_if_true if condition else expression_if_false
+
+a = 'next'
+result = True if a == 'next' else False
+print(result)
+
+# or use as follows;
+
+a = 'next'
+result = (a == 'next')
+print(result)
