@@ -26,4 +26,8 @@ import os
 
 # print(os.getlogin())    # print currently logged in account name
 
-print(os.name)    # retrieves information identifying the true operating system you are running on
+# print(os.name)    # retrieves information identifying the true operating system you are running on
+
+# print(os.cpu_count())    # give total cpu count in numbers
+
+# print(os.getpid())      # gives current process id
