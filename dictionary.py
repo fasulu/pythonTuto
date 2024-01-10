@@ -23,6 +23,22 @@ print(d)  # result is {'a': 2, 'b': 5, 'c': 1, 'd': 4, 'e': 7, 'f': 8, 'g': 9}
 d.pop('g')
 print(d)  # result is {'a': 2, 'b': 5, 'c': 1, 'd': 4, 'e': 7, 'f': 8}
 
+
+dict1={'a':1}
+dict2={'b':2}
+dict3={'c':3}
+
+dict1.update(dict2)  # this will append dict2 in to dict1
+print('dict1 value',dict1)  # dict1 value {'a': 1, 'b': 2}
+
+dict4={**dict2, **dict3}  
+print('dict4 value',dict4)  # dict4 value {'b': 2, 'c': 3}
+
+# another way to do the above is 
+dict4=dict2 | dict3     # dict4 value {'b': 2, 'c': 3}
+print('dict2 value',dict2,'dict3 value',dict3)  # dict2 value {'b': 2} dict3 value {'c': 3}
+print('dict4 value',dict4)  # dict4 value {'b': 2, 'c': 3}
+
 ###################
 
 for i in d:
@@ -80,4 +96,3 @@ for i in d:
 # e : 7
 # f : 8
 
-# https://www.youtube.com/watch?v=c6hTa-CNVF0&list=PLIFRUdRwOM0_hcLruKbsHWnU5P2uLBgsp&index=28
